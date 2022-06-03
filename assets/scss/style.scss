@@ -76,8 +76,10 @@ body{
     justify-content: space-between;
     padding: 0;
     @include mixins.mobile{
+        flex-direction: row;
+    }
+    @include mixins.mobile1{
         flex-direction: column;
-
     }
 
     &-card{ //.gallery-card
@@ -88,9 +90,13 @@ body{
         flex-direction: column;
         color: variables.$primary-color;
         @include mixins.mobile{
-            width: 90%;
+            width: 45%;
             margin-bottom: 6%;
             
+        }
+        @include mixins.mobile1{
+            width: 90%;
+            margin-bottom: 6%;
         }
         &-title{
             font-size: 2rem;
