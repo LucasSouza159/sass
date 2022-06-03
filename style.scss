@@ -5,4 +5,9 @@ p{
     b{
         background: black;
     }
+    &:hover{
+        color: red;
+    }
 }
+
+//para compilar todos os arquivos scss de uma vez utilize: sass --watch .
