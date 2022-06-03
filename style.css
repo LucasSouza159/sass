@@ -8,4 +8,16 @@ p:hover {
   color: red;
 }
 
+.btn, .btn-laranja {
+  width: 200px;
+  padding: 10px 0px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-laranja {
+  background: orange;
+}
+
 /*# sourceMappingURL=style.css.map */
