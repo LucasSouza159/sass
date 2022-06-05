@@ -1,0 +1,30 @@
+div {
+  background-color: black;
+  height: 300px;
+  width: 300px;
+}
+
+div p {
+  color: white;
+}
+
+div a {
+  color: red;
+}
+
+div li {
+  display: flex;
+  flex-direction: column;
+}
+
+div li a {
+  color: white;
+}
+
+div li a:hover {
+  color: blue;
+}
+
+.active div li a {
+  background-color: red;
+}
