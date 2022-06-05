@@ -1,0 +1,9 @@
+/*Para importar é necessário utilizar o @import e também o arquivo em questão tem que ter o _ no começo 
+caso contrário vai gerar um novo arquivo para ser requistado. Com o _ ele vai direcionar todos para o sem anderline
+no nosso caso, import */
+@import "colors";
+
+p{
+    background-color: $text;
+    color: pink;
+}
