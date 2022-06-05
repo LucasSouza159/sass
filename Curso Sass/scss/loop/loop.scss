@@ -1,0 +1,35 @@
+//Porcentagem
+@for $i from 1 through 12{
+    $width: percentage(1 / $i);
+    .porcente-#{$i}{
+        width: $width;
+    }
+}
+//Pixel
+$container: 960;
+$gutter:20;
+$colunas: 12;
+@for $i from 1 through 12{
+    $width:$container / $colunas * $i - $gutter ;
+    .grid-#{$i}{
+        width: $width + px;
+    }
+}
+
+
+//@while
+$numero: 1;
+@while $numero <= 6{
+    .type-#{$numero}{
+        font-size: 16 * $numero + px;
+    }
+    $numero: $numero + 2;
+}
+
+//@each
+$redes: facebook twitter pinterest instagram;
+@each $rede in $redes{
+    .#{$rede}-icon{
+        background-image: url(("../img/#{$rede}.png"));
+    }
+}
