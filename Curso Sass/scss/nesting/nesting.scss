@@ -1,0 +1,25 @@
+div{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    p{
+        color: white;
+    }
+    a{
+        color: red;
+    }
+        li{
+            display: flex;
+            flex-direction: column;
+            a{
+                color: white;
+                &:hover{ //unpercent
+                    color: blue; 
+                }
+                //ou
+                .active & {
+                    background-color: red; //assim
+                }
+            }
+        }
+}
