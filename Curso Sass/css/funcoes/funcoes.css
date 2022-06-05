@@ -1,0 +1,39 @@
+a {
+  color: white;
+  background: #8844EE;
+}
+
+a:hover {
+  background: #c4a2f7;
+}
+
+p {
+  color: white;
+  background: #8844EE;
+}
+
+p:hover {
+  background: #400d8c;
+}
+
+h1 {
+  color: white;
+  background: #8844EE;
+}
+
+h1:hover {
+  background: rgba(136, 68, 238, 0.5);
+}
+
+p {
+  width: 133px;
+  height: 133.33333px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+div {
+  width: 17%;
+}

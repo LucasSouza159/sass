@@ -1,0 +1,45 @@
+//lighten - clarear e darken - escurecer
+$roxo: #8844EE;
+a{
+    color: white;
+    background: $roxo;
+    &:hover{
+        background: lighten($roxo, 20%);
+    }
+}
+p{
+    color: white;
+    background: $roxo;
+    &:hover{
+        background: darken($roxo, 30%);
+    }
+}
+//transparentize - deixar puxado para o transparente
+h1{
+    color: white;
+    background: $roxo;
+    &:hover{
+        background: transparentize($roxo, .5);
+    }
+}
+//round - arredondar
+$width: 400px;
+p{
+    width: round($width  / 3);
+    height: $width / 3;
+}
+
+//Criar funções
+@function em($pixels, $contexto: 16){
+    @return ($pixels / $contexto) * 1em;
+}
+p{
+font-size: em(24);
+}
+
+@function grid($colunas, $total: 12){
+    @return round(($colunas / $total) * 100%);
+}
+div{
+    width: grid(2);
+}
