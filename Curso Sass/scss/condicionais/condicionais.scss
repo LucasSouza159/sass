@@ -1,0 +1,81 @@
+$tema: deserto;
+$primary-color: black;
+$secondary-color: gray;
+
+@if $tema == oceano{
+    $primary-color: blue;
+    $secondary-color: orange;
+}@else if $tema == deserto{
+    $primary-color: yellow;
+    $secondary-color: purple;
+}
+p{
+    color: $primary-color;
+    background: $secondary-color;
+}
+///
+@mixin type-1($size){
+    font-family: monospace;
+    @if $size == 16{
+        font-size: 1em;
+        font-weight: normal;
+    }@else if $size == 18{
+        font-size: 1.25em;
+    }@else if $size == 24{
+        font-family: 2rem;
+        font-weight: bold;
+    }
+}
+p{
+    @include type-1(24);
+}
+///
+@mixin shadow($type){
+    @if $type == 1{
+        box-shadow: 5px 10px 5px 0 #000;
+    }@else if $type == 2{
+        box-shadow: 15px 15px 15px 0 #333;
+    }@else if $type == 3{
+        box-shadow: 25px 25px 25px 0 #666;
+    }
+}
+div{
+    @include shadow(3);
+}
+///Responsivo maneiro
+@mixin  device($device) {
+    @if $device == m{
+        @media (max-width: 300px){
+            @content;
+        }
+    }@else if $device == t{
+        @media (max-width: 600px){
+            @content;
+        }
+    }@else if $device == s{
+        @media (max-width: 900px){
+            @content;
+        }
+    }
+}
+div{
+    font-size: 1.5em;
+    @include device(t){
+        font-size: 1.2em;
+    }
+    @include device(m){
+        font-size: 1em;
+    }
+}
+
+//Operadores lógicos
+div{
+    $width: 600px;
+    @if $width > 400px{
+        width: $width;
+        height: $width * 1.5;
+    }@else{
+        width: $width;
+        height: $width;
+    }
+}
