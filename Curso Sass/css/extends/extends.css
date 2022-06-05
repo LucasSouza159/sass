@@ -1,0 +1,13 @@
+.erro, .button-erro {
+  color: red;
+  font-weight: bold;
+}
+
+.erro.top, .top.button-erro {
+  margin-bottom: 20px;
+}
+
+.button-erro {
+  padding: 20px;
+  border: 2px solid red;
+}
