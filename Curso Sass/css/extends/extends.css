@@ -11,3 +11,9 @@
   padding: 20px;
   border: 2px solid red;
 }
+
+div::after, section::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -3,11 +3,23 @@
     color: red;
     font-weight: bold;
 }
-.erro.top{ //vai extender para o .button erro tbm, o que não é legal
+.erro.top{ //vai extender para o .button erro tbm, o que não é legal .top.buttonerro
     margin-bottom: 20px
 }
 .button-erro{
     @extend .erro;
     padding: 20px;
     border: 2px solid red;
+}
+//%placeholder
+%clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+div{
+    @extend %clearfix;
+}
+section{
+    @extend %clearfix;
 }
