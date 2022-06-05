@@ -1,0 +1,15 @@
+//Px, em, rem não pode ser somados se forem diferente, tem que ser px com px, em com em, e rem, com rem.
+P{
+    font-size: 16px + 10;
+}
+h1{
+    font-size: 1em + 2;
+}
+$gutter: 20px;
+div{
+    $width:400px ;
+    width: $width - 2 * $gutter;
+    padding: $gutter;
+    height: $width / 2;
+    background-color: #333 + #787; //Soma de cores, não muito utilizado.
+}

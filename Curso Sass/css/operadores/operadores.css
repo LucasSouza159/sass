@@ -1,0 +1,14 @@
+P {
+  font-size: 26px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+div {
+  width: 360px;
+  padding: 20px;
+  height: 200px;
+  background-color: #aabbaa;
+}
