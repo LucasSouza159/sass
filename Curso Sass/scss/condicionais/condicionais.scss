@@ -32,7 +32,7 @@ p{
 ///
 @mixin shadow($type){
     @if $type == 1{
-        box-shadow: 5px 10px 5px 0 #000;
+        box-shadow: 5px 10px 5px 0 $black;
     }@else if $type == 2{
         box-shadow: 15px 15px 15px 0 #333;
     }@else if $type == 3{
