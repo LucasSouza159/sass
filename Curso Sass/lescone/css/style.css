@@ -199,3 +199,22 @@ table {
   display: table;
   clear: both;
 }
+
+.row .row {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+@media screen and (max-width: 759px) {
+  .row .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.row .row::after, .row .row::before {
+  content: "";
+  display: table;
+  clear: both;
+}
