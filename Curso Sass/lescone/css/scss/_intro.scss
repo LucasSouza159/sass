@@ -1,0 +1,16 @@
+.intro{
+    margin-top: 60px;
+    @include d(s){
+        margin-top: 20px;
+    }
+}
+.logo{
+    margin-bottom: 60px;
+}
+.intro-info{
+    border-right: 2px solid $cinza;
+    max-width: 320px;
+    p{
+        
+    }
+}
